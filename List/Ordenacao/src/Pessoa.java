@@ -19,6 +19,7 @@ class Pessoa implements Comparable<Pessoa> {
     public String getnome() {
         return nome;
     }
+
     public int getidade() {
         return idade;
     }

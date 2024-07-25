@@ -18,17 +18,15 @@ class OrdenacaoPessoas {
         Collections.sort(pessoas);
     }
 
+    public void ordenarPornome() {
+        Collections.sort(pessoas);
+    }
+
     public void ordenarPoraltura() {
         Collections.sort(pessoas, Comparator.comparingDouble(Pessoa::getaltura));
     }
 
-    public Pessoa[] getpessoas() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPessoas'");
-    }
-
-    public Pessoa[] getPessoas() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPessoas'");
+    public List<Pessoa> getpessoas() {
+        return pessoas;
     }
 }

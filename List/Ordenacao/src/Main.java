@@ -17,8 +17,15 @@ public class Main {
         // Ordenando por altura
         ordenador.ordenarPoraltura();
         System.out.println("\nOrdenado por altura:");
-        for (Pessoa pessoa : ordenador.getPessoas()) {
+        for (Pessoa pessoa : ordenador.getpessoas()) {
             System.out.println(pessoa.getnome() + " - Altura: " + pessoa.getaltura());
+        }
+
+        // Ordenando por nome
+        ordenador.ordenarPornome();
+        System.out.println("\nOrdenado por nome:");
+        for (Pessoa pessoa : ordenador.getpessoas()) {
+            System.out.println("Nome: " + pessoa.getnome());
         }
     }
 }
